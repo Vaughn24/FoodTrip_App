@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -16,7 +20,7 @@
     position: fixed;
     width: 100%;
     padding: 30px 0;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
     transition: all 0.3s ease;
 }
 
@@ -39,7 +43,7 @@
 }
 
 .navbar .logo a span{
-    color: lightcoral;
+    color: rgb(128, 240, 128);
     transition: all 0.3s ease;
 }
 
@@ -67,23 +71,39 @@
     color: #fff;
 }
 
+.scrolling-active{ /* This is for navbar when scroll */
+    background-color: rgb(39, 39, 39);
+    box-shadow: 0 3px 1rem rgba(0, 0, 0, .1);
+    z-index: 1;
+}
+
 .home{
+    
+    background-image: url("images/Landing.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
     display: flex;
-    background-color: lightpink;
-    height: 60vh;
     color: white;
     min-height: 500px;
-    font-family: Arial, Helvetica, sans-serifs
+    font-family: Arial, Helvetica, sans-serif;
 }
 .home .max-width{
     margin: auto 0 auto 40px;
 }
 
+.home-content{
+    transform: translate(22px,-32px);
+}
+
 .home .home-content .text-1{
-    font-size: 27px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
    
 }
 .home .home-content .text-2{
+    font-family: 'Pacifico', cursive;
+    font-family: 'Dancing Script', cursive;
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
@@ -91,9 +111,13 @@
 .home .home-content .text-3{
     font-size: 40px;
     margin: 5px 0;
+    color: rgb(255, 255, 255);
 }
 .home .home-content .text-3 span{
-    color: lightcoral;
+    color:rgb(0, 0, 0);
+    font-weight:bolder;
+    background-color: rgb(255, 255, 255);
+    padding: 1px 3px;
 
 }
 
