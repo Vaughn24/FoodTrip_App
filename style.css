@@ -10,6 +10,11 @@
 
 }
 
+/* Delete this after */
+html{
+    height: 5000px;
+}
+/*----------------- */
 .max-width{
     max-width: 1400px;
     padding: 0 80 px;
@@ -19,7 +24,7 @@
 .navbar{
     position: fixed;
     width: 100%;
-    padding: 30px 0;
+    padding: 18px 0;
     font-family: Arial, Helvetica, sans-serif;
     transition: all 0.3s ease;
 }
@@ -130,21 +135,83 @@
     font-family: Arial, Helvetica, sans-serif
 }
 
+
 .shop .max-width{
     margin-top: 30px;
 }
 
-img{
+.food-deck{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 200px;
+    gap: 20px;
+    font-family: sans-serif;
+    justify-content: center;
+    
+    
+}
+
+.food-card{
+    box-shadow: 0 0 3px rgba(0, 0, 0, .1);
+    margin: 5px 0px;
+    padding: 10px 10px;
+    padding-bottom: 100px;
+}
+
+.food-card span{
+    margin-left: 150px;
+}
+.food-deck .food-card img{
+    width: 300px;
+}
+.food-deck .food-card .card-price{
+    font-size: 18px;
+    background-color: rgba(238, 238, 238, 0.877);
+    display: flex;
+    padding: 15px;
+    flex-direction: row;
+    margin: 18px -10px -100px;
+    padding: 10px 3px;
+}
+
+/*-------------------- BUTTON -----------------*/
+.add-button {
+	background-color:#44c767;
+	border-radius:30px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:23px;
+	padding:5px 11px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #2f6627;
+    margin-left: 190px;
+}
+.add-button:hover {
+	background-color:#5cbf2a;
+}
+.add-button:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+/* img{
     margin-top: 20px;
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
+} */
 
 h1{
     font-size: 30px;
     display: flex;
     justify-content: center;
+
 }
 
 h2{
