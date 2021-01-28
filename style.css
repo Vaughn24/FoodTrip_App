@@ -29,11 +29,6 @@ html{
     transition: all 0.3s ease;
 }
 
-.navbar.sticky{
-    padding: 15px 0;
-    background: lightcoral;
-}
-
 .navbar .max-width{
     display: flex;
     align-items: center;
@@ -67,14 +62,9 @@ html{
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-    color: lightcoral; 
+    color: rgb(128, 240, 128);
 }
-.navbar .menu li a:hover{
-    color: lightcoral; 
-}
-.navbar.sticky .menu li a:hover{
-    color: #fff;
-}
+
 
 .scrolling-active{ /* This is for navbar when scroll */
     background-color: rgb(39, 39, 39);
@@ -161,10 +151,12 @@ html{
 }
 
 .food-card span{
-    margin-left: 150px;
+    display: flex;
+    justify-content: flex-end;
+    
 }
 .food-deck .food-card img{
-    width: 300px;
+    width: 350px;
 }
 .food-deck .food-card .card-price{
     font-size: 18px;
@@ -188,7 +180,7 @@ html{
 	padding:5px 11px;
 	text-decoration:none;
     text-shadow:0px 1px 0px #2f6627;
-    margin-left: 190px;
+    margin-left: 240px;
 }
 .add-button:hover {
 	background-color:#5cbf2a;
@@ -197,7 +189,24 @@ html{
 	position:relative;
 	top:1px;
 }
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 1px;
+    
+  }
+  .button1 {
+      border-radius: 12px;
+      margin-left: 650px;
+      margin-top: 20px;
 
+}
 
 
 /* img{
@@ -217,3 +226,18 @@ h1{
 h2{
     font-size: 24px;
 }
+
+.main-shop h1{
+    margin-top: 15px;
+    font-size: 30px;
+    display: flex;
+    justify-content: left;
+}
+
+
+.footer-deck{
+    display: flex;
+    background-color: DarkSalmon;
+    color: white;
+    align-items: flex-end;
+  }
