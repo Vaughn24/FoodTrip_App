@@ -46,7 +46,12 @@
                                     <h3>Cordon Bleu <span>Customer Rating: 5<i class="fas fa-star"></i></span> </h3>
                                 </div>
                                 <div class="card-price">
-                                    <p>₱180.00 <a onclick="addItemToCart()" class="add-button" id="cart-btn">+</a> </p>
+                                    <p class="price"> ₱180.00  </p>
+                                    <div class="add-to-cart">
+                                        <a onclick="minItemToCart(1,'cordon')" class="min-button" id="cart-btn">-</a>
+                                        <span id="quantity-cordon">0</span>
+                                        <a onclick="addItemToCart(1,'cordon')" class="add-button" id="cart-btn">+</a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="food-card">
@@ -55,7 +60,12 @@
                                     <h3>Creamy Carbonara <span>Customer Rating: 5<i class="fas fa-star"></i></span> </h3>
                                 </div>
                                 <div class="card-price">
-                                    <p>₱220.00 <a onclick="addItemToCart()" class="add-button" id="cart-btn">+</a> </p>
+                                    <p class="price"> ₱180.00  </p>
+                                    <div class="add-to-cart">
+                                        <a onclick="minItemToCart(1,'carbonara')" class="min-button" id="cart-btn">-</a>
+                                        <span id="quantity-carbonara">0</span>
+                                        <a onclick="addItemToCart(1,'carbonara')" class="add-button" id="cart-btn">+</a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="food-card">
@@ -64,7 +74,12 @@
                                     <h3>Japanese Ramen <span>Customer Rating: 5<i class="fas fa-star"></i></span> </h3>
                                 </div>
                                 <div class="card-price">
-                                    <p>₱170.00 <a onclick="addItemToCart()" class="add-button" id="cart-btn">+</a> </p>
+                                    <p class="price"> ₱180.00  </p>
+                                    <div class="add-to-cart">
+                                        <a onclick="minItemToCart(1,'ramen')" class="min-button" id="cart-btn">-</a>
+                                        <span id="quantity-ramen">0</span>
+                                        <a onclick="addItemToCart(1,'ramen')" class="add-button" id="cart-btn">+</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -76,7 +91,7 @@
                 </div>
                 <!-- MAIN SHOP -->
                 <div class="main-shop">
-                    <h1>Main Shop</h1>
+                    <h1>Main Shop Near You</h1>
                     <div class="food-deck">
                         <div class="food-card">
                             <img src="images/CheesyPizza.jpg">
@@ -84,7 +99,12 @@
                                 <h3>Cheesy Bites Pizza <span>Customer Rating: 3<i class="fas fa-star"></i></span> </h3>
                             </div>
                             <div class="card-price">
-                                <p>₱240.00 <a onclick="addItemToCart()" class="add-button" id="cart-btn">+</a> </p>
+                                <p class="price"> ₱180.00  </p>
+                                <div class="add-to-cart">
+                                    <a onclick="minItemToCart(1,'cheesyPizza')" class="min-button" id="cart-btn">-</a>
+                                    <span id="quantity-cheesyPizza">0</span>
+                                    <a onclick="addItemToCart(1,'cheesyPizza')" class="add-button" id="cart-btn">+</a>
+                                </div>
                             </div>
                         </div>
                         <div class="food-card">
@@ -93,7 +113,12 @@
                                 <h3>Hot Buffalo Wings <span>Customer Rating: 3.5<i class="fas fa-star"></i></span> </h3>
                             </div>
                             <div class="card-price">
-                                <p>₱175.00 <a onclick="addItemToCart()" class="add-button" id="cart-btn">+</a> </p>
+                                <p class="price"> ₱180.00  </p>
+                                <div class="add-to-cart">
+                                    <a onclick="minItemToCart(1,'bwings')" class="min-button" id="cart-btn">-</a>
+                                    <span id="quantity-bwings">0</span>
+                                    <a onclick="addItemToCart(1,'bwings')" class="add-button" id="cart-btn">+</a>
+                                </div>
                             </div>
                         </div>
                         <div class="food-card">
@@ -102,7 +127,12 @@
                                 <h3>Buttered Lobster <span>Customer Rating: 4.5<i class="fas fa-star"></i></span> </h3>
                             </div>
                             <div class="card-price">
-                                <p>₱250.00 <a onclick="addItemToCart()" class="add-button" id="cart-btn">+</a> </p>
+                                <p class="price"> ₱180.00  </p>
+                                <div class="add-to-cart">
+                                    <a onclick="minItemToCart(1,'blobs')" class="min-button" id="cart-btn">-</a>
+                                    <span id="quantity-blobs">0</span>
+                                    <a onclick="addItemToCart(1,'blobs')" class="add-button" id="cart-btn">+</a>
+                                </div>
                             </div>
                         </div>
                         <div class="food-card">
@@ -111,7 +141,12 @@
                                 <h3>Milktea <span>Customer Rating: 3<i class="fas fa-star"></i></span> </h3>
                             </div>
                             <div class="card-price">
-                                <p>₱110.00 <a onclick="addItemToCart()" class="add-button" id="cart-btn">+</a> </p>
+                                <p class="price"> ₱180.00  </p>
+                                <div class="add-to-cart">
+                                    <a onclick="minItemToCart(1,'milktea')" class="min-button" id="cart-btn">-</a>
+                                    <span id="quantity-milktea">0</span>
+                                    <a onclick="addItemToCart(1,'milktea')" class="add-button" id="cart-btn">+</a>
+                                </div>
                             </div>
                         </div>
                         <div class="food-card">
@@ -120,7 +155,12 @@
                                 <h3>Frappucino <span>Customer Rating: 3.5<i class="fas fa-star"></i></span> </h3>
                             </div>
                             <div class="card-price">
-                                <p>₱120.00 <a onclick="addItemToCart()" class="add-button" id="cart-btn">+</a> </p>
+                                <p class="price"> ₱180.00  </p>
+                                <div class="add-to-cart">
+                                    <a onclick="minItemToCart(1,'frap')" class="min-button" id="cart-btn">-</a>
+                                    <span id="quantity-frap">0</span>
+                                    <a onclick="addItemToCart(1,'frap')" class="add-button" id="cart-btn">+</a>
+                                </div>
                             </div>
                         </div>
                         <div class="food-card">
@@ -129,7 +169,12 @@
                                 <h3>Grilled Pork Belly <span>Customer Rating: 3.5<i class="fas fa-star"></i></span> </h3>
                             </div>
                             <div class="card-price">
-                                <p>₱60.00 <a onclick="addItemToCart()" class="add-button" id="cart-btn">+</a> </p>
+                                <p class="price"> ₱180.00  </p>
+                                <div class="add-to-cart">
+                                    <a onclick="minItemToCart(1,'gporkbelly')" class="min-button" id="cart-btn">-</a>
+                                    <span id="quantity-gporkbelly">0</span>
+                                    <a onclick="addItemToCart(1,'gporkbelly')" class="add-button" id="cart-btn">+</a>
+                                </div>
                             </div>
                         </div>
                         <div class="food-card">
@@ -138,7 +183,12 @@
                                 <h3>Pancit Canton <span>Customer Rating: 2<i class="fas fa-star"></i></span> </h3>
                             </div>
                             <div class="card-price">
-                                <p>₱180.00 <a onclick="addItemToCart()" class="add-button" id="cart-btn">+</a> </p>
+                                <p class="price"> ₱180.00  </p>
+                                <div class="add-to-cart">
+                                    <a onclick="minItemToCart(1,'pcanton')" class="min-button" id="cart-btn">-</a>
+                                    <span id="quantity-pcanton">0</span>
+                                    <a onclick="addItemToCart(1,'pcanton')" class="add-button" id="cart-btn">+</a>
+                                </div>
                             </div>
                         </div>
                         <div class="food-card">
@@ -147,7 +197,12 @@
                                 <h3>Palabok <span>Customer Rating: 3<i class="fas fa-star"></i></span> </h3>
                             </div>
                             <div class="card-price">
-                                <p>₱140.00 <a onclick="addItemToCart()" class="add-button" id="cart-btn">+</a> </p>
+                                <p class="price"> ₱180.00  </p>
+                                <div class="add-to-cart">
+                                    <a onclick="minItemToCart(1,'palabok')" class="min-button" id="cart-btn">-</a>
+                                    <span id="quantity-palabok">0</span>
+                                    <a onclick="addItemToCart(1,'palabok')" class="add-button" id="cart-btn">+</a>
+                                </div>
                             </div>
                         </div>
                         <div class="food-card">
@@ -156,7 +211,12 @@
                                 <h3>LumpiangShanghai <span>Customer Rating: 3<i class="fas fa-star"></i></span> </h3>
                             </div>
                             <div class="card-price">
-                                <p>₱90.00 <a onclick="addItemToCart()" class="add-button" id="cart-btn">+</a> </p>
+                                <p class="price"> ₱180.00  </p>
+                                <div class="add-to-cart">
+                                    <a onclick="minItemToCart(1,'lumshang')" class="min-button" id="cart-btn">-</a>
+                                    <span id="quantity-lumshang">0</span>
+                                    <a onclick="addItemToCart(1,'lumshang')" class="add-button" id="cart-btn">+</a>
+                                </div>
                             </div>
                         </div>
 
