@@ -1,18 +1,19 @@
+var showModal = false;
 
 ///////////////// NAV BAR SCROLL EFFECT///////////////
-window.addEventListener('scroll', function () {
-    let header = document.querySelector('.navbar');
-    let windowPosition = window.scrollY > 0;
-    header.classList.toggle('scrolling-active', windowPosition);
-})
-////////////////////////////////////////////////////
+window.addEventListener('scroll', function() {
+        let header = document.querySelector('.navbar');
+        let windowPosition = window.scrollY > 0;
+        header.classList.toggle('scrolling-active', windowPosition);
+    })
+    ////////////////////////////////////////////////////
 
 
-function jumpToCart(){
+function jumpToCart() {
     window.location.hash = "cart-list";
 }
 
-function jumpToMainShop(){
+function jumpToMainShop() {
     window.location.hash = "shop";
 }
 ////////////////////////////////////////////////////
@@ -67,14 +68,14 @@ function quantityChanged(event) {
     updateCartTotal()
 }
 
-function addToCartClicked(event) { 
+function addToCartClicked(event) {
     updateCartTotal()
     var button = event.target
     var shopItem = button.parentElement.parentElement
     var title = shopItem.getElementsByClassName('shop-item-title')[0].innerText
     var price = shopItem.getElementsByClassName('price')[0].innerText
     var imageSrc = shopItem.getElementsByClassName('shop-item-image')[0].src
-    
+
     addItemToCart(title, price, imageSrc)
 
 }
@@ -104,7 +105,7 @@ function addItemToCart(title, price, imageSrc) {
     cartItems.append(cartRow)
     cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem)
     cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged)
-    
+
 }
 
 function updateCartTotal() {
@@ -124,6 +125,21 @@ function updateCartTotal() {
     total = Math.round(total * 100) / 100
 
 
-    document.getElementsByClassName('cart-total-price')[0].innerText = "₱"+ total
+    document.getElementsByClassName('cart-total-price')[0].innerText = "₱" + total
 }
 
+function toggleModal() {
+    console.log('toggled')
+
+    const cartlist = document.querySelector('#cart-list')
+    const cartlistContainer = document.querySelector('.cartlist-items-container')
+    if (showModal) {
+        cartlist.classList.add('hidden')
+        cartlistContainer.classList.add('hidden')
+    } else {
+        cartlist.classList.remove('hidden')
+        cartlistContainer.classList.remove('hidden')
+    }
+
+    showModal = !showModal
+}
