@@ -1,53 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-
 }
 
-.max-width{
+.max-width {
     max-width: 1400px;
     padding: 0 80 px;
     margin: auto;
 }
 
-.navbar{
+.navbar {
     position: fixed;
     width: 100%;
-    padding: 18px 0;
+    padding: 18px 2em;
     font-family: Arial, Helvetica, sans-serif;
     transition: all 0.3s ease;
 }
 
-.navbar .max-width{
+.navbar .max-width {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
-.navbar .logo a{
+.navbar .logo a {
     color: #fff;
     font-size: 35px;
     font-weight: 600;
 }
 
-.navbar .logo a span{
+.navbar .logo a span {
     color: rgb(128, 240, 128);
     transition: all 0.3s ease;
 }
 
-.navbar.sticky .logo a span{
+.navbar.sticky .logo a span {
     color: #fff;
 }
-.navbar .menu li{
+
+.navbar .menu li {
     list-style: none;
     display: inline-block;
 }
-.navbar .menu li a{
+
+.navbar .menu li a {
     color: #fff;
     font-size: 18px;
     font-weight: 500;
@@ -55,25 +55,25 @@
     transition: color 0.3s ease;
     cursor: default;
 }
-.navbar .menu li a:hover{
+
+.navbar .menu li a:hover {
     color: rgb(128, 240, 128);
 }
 
-@media only screen and (max-width: 1400px){
-    .navbar{
+@media only screen and (max-width: 1400px) {
+    .navbar {
         padding: 18px 25px
     }
 }
 
-
-.scrolling-active{ /* This is for navbar when scroll */
+.scrolling-active {
+    /* This is for navbar when scroll */
     background-color: rgb(39, 39, 39);
     box-shadow: 0 3px 1rem rgba(0, 0, 0, .1);
     z-index: 1;
 }
 
-.home{
-    
+.home {
     background-image: url("images/Landing.jpeg");
     background-size: cover;
     background-position: center;
@@ -83,40 +83,42 @@
     min-height: 500px;
     font-family: Arial, Helvetica, sans-serif;
 }
-.home .max-width{
+
+.home .max-width {
     margin: auto 0 auto 40px;
 }
 
-.home-content{
-    transform: translate(22px,-32px);
+.home-content {
+    transform: translate(22px, -32px);
 }
 
-.home .home-content .text-1{
+.home .home-content .text-1 {
     font-family: 'Dancing Script', cursive;
     font-size: 40px;
-   
 }
-.home .home-content .text-2{
+
+.home .home-content .text-2 {
     font-family: 'Pacifico', cursive;
     font-family: 'Dancing Script', cursive;
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
 }
-.home .home-content .text-3{
+
+.home .home-content .text-3 {
     font-size: 40px;
     margin: 5px 0;
     color: rgb(255, 255, 255);
 }
-.home .home-content .text-3 span{
-    color:rgb(0, 0, 0);
-    font-weight:bolder;
+
+.home .home-content .text-3 span {
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
     background-color: rgb(255, 255, 255);
     padding: 1px 3px;
-
 }
 
-.shop{
+.shop {
     display: flex;
     background-color: white;
     color: black;
@@ -124,13 +126,11 @@
     font-family: Arial, Helvetica, sans-serif
 }
 
-
-.shop .max-width{
+.shop .max-width {
     margin-top: 30px;
 }
 
-
-.food-deck{
+.food-deck {
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -139,26 +139,25 @@
     gap: 20px;
     font-family: sans-serif;
     justify-content: center;
-    
-    
 }
 
-.food-card{
+.food-card {
     box-shadow: 0 0 3px rgba(0, 0, 0, .1);
     margin: 5px 0px;
     padding: 10px 10px;
     padding-bottom: 100px;
 }
 
-.food-card span{
+.food-card span {
     display: flex;
     justify-content: flex-end;
-    
 }
-.food-deck .food-card img{
+
+.food-deck .food-card img {
     width: 350px;
 }
-.food-deck .food-card .card-price{
+
+.food-deck .food-card .card-price {
     font-size: 18px;
     background-color: rgba(238, 238, 238, 0.877);
     display: flex;
@@ -168,27 +167,31 @@
     justify-content: space-between;
 }
 
-/*-------------------- BUTTON -----------------*/
-.add-button {
-	background-color:#44c767;
-	border-radius:30px;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:23px;
-	padding:5px 11px;
-	text-decoration:none;
-    text-shadow:0px 1px 0px #2f6627;
 
+/*-------------------- BUTTON -----------------*/
+
+.add-button {
+    background-color: #44c767;
+    border-radius: 30px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 23px;
+    padding: 5px 11px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f6627;
 }
+
 .add-button:hover {
-	background-color:#5cbf2a;
+    background-color: #5cbf2a;
 }
+
 .add-button:active {
-	position:relative;
-	top:1px;
+    position: relative;
+    top: 1px;
 }
+
 .button {
     background-color: #4CAF50;
     border: none;
@@ -199,73 +202,126 @@
     display: inline-block;
     font-size: 16px;
     margin: 2px 1px;
-    
-  }
+}
 
-  .min-button {
-	background-color:#f03717;
-	border-radius:30px;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:23px;
-	padding:5px 14px;
-	text-decoration:none;
-    text-shadow:0px 1px 0px #2f6627;
+.min-button {
+    background-color: #f03717;
+    border-radius: 30px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 23px;
+    padding: 5px 14px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f6627;
     visibility: visible;
-
 }
+
 .min-button:hover {
-	background-color:#bf4d2a;
+    background-color: #bf4d2a;
 }
+
 .min-button:active {
-	position:relative;
-	top:1px;
+    position: relative;
+    top: 1px;
 }
 
-
-  .button1 {
-      border-radius: 12px;
-      margin-left: 650px;
-      margin-top: 20px;
-
+.button1 {
+    border-radius: 12px;
+    margin-left: 650px;
+    margin-top: 20px;
 }
 
-.add-to-cart{
+.add-to-cart {
     display: flex;
     flex: 1;
     align-items: center;
     justify-content: space-between;
 }
 
-.price{
+.price {
     flex: 2;
 }
 
-h1{
+h1 {
     font-size: 30px;
     display: flex;
     justify-content: center;
-
 }
 
-h2{
+h2 {
     font-size: 24px;
 }
 
-.main-shop h1{
+.main-shop h1 {
     margin-top: 15px;
     font-size: 30px;
     display: flex;
     justify-content: left;
 }
 
-.cartlist h1{
+.cartlist-items-container h1 {
     margin-top: 15px;
     font-size: 30px;
     display: flex;
     justify-content: left;
+    width: auto;
+}
+
+.cartlist-items-container {
+    width: 50%;
+    background-color: white;
+    padding: 1em;
+    box-sizing: border-box;
+    border-radius: 1em;
+    z-index: 10;
+}
+
+.cartlist.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.35s ease-in-out;
+}
+
+.cartlist-items-container.hidden {
+    opacity: 0;
+    transform: scale(0.85);
+    transition: all 0.15s ease-in-out 0.15s;
+}
+
+:not(.hidden).cartlist-items-container {
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.15s ease-in-out 0.15s;
+}
+
+.cartlist {
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.35s ease-in-out;
+}
+
+.cart-items {
+    max-height: 40vh;
+    overflow: auto;
+}
+
+.cartlist,
+.cartlist-backdrop {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.cartlist-backdrop {
+    background: rgba(0, 0, 0, .7);
+    z-index: 9;
 }
 
 .content-section {
@@ -329,7 +385,6 @@ h2{
     border: none;
     border-radius: .5em;
     font-weight: bold;
-    
 }
 
 .btn-danger:hover {
@@ -377,9 +432,10 @@ h2{
 
 .btn-purchase {
     display: block;
-    margin: 40px auto 80px auto;
+    margin: 1em auto 0 auto;
     font-size: 1.75em;
 }
+
 .btn {
     text-align: center;
     vertical-align: middle;
