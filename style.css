@@ -341,8 +341,9 @@ h2{
     color: white;
     background-color: #EB5757;
     border: none;
-    border-radius: .3em;
+    border-radius: .5em;
     font-weight: bold;
+    
 }
 
 .btn-danger:hover {
@@ -392,4 +393,10 @@ h2{
     display: block;
     margin: 40px auto 80px auto;
     font-size: 1.75em;
+}
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
 }
