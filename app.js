@@ -8,25 +8,6 @@ window.addEventListener('scroll', function () {
 ////////////////////////////////////////////////////
 
 
-
-///////////////// Add / Minus Button ///////////////
-// function addItemToCart(amount,foodname) {
-//     let qtfood = document.querySelector(`#quantity-${foodname}`);
-//     let qty = parseInt(qtfood.innerHTML,10);
-//     let sum = qty + amount;
-//     qtfood.innerHTML=sum;
-// }
-
-// function minItemToCart(amount,foodname){
-//     let qtfood = document.querySelector(`#quantity-${foodname}`);
-//     let qty = parseInt(qtfood.innerHTML,10);
-//     if(qty >= 1){
-//         let sum = qty - amount;
-//         qtfood.innerHTML=sum;
-//     }
-
-// }
-
 function jumpToCart(){
     window.location.hash = "cart-list";
 }
