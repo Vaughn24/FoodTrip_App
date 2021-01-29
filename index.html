@@ -14,7 +14,7 @@
                 <div class="logo"><a href="#">Food<span>Trip</span></a></div>
                 <ul class="menu">
                     <li><a href="#"><i class="fa fa-shopping-bag"></i> Shop</i></a></li>
-                    <li><a href="#" ><i class="fa fa-shopping-cart"></i> Cart</i></a></li>
+                    <li><a href="#cart-list" ><i class="fa fa-shopping-cart"></i> Cart</i></a></li>
                     <li><a href="#"><i class="fa fa-user"></i> Profile</i></a></li>
                     
                 </ul>
@@ -52,7 +52,7 @@
                                 <div class="card-price">
                                     <p class="price"> ₱180.00  </p>
                                     <div class="add-to-cart">
-                                        <a onclick="addToCartClicked()" class="shop-item-button add-button" id="cart-btn">Order</a>
+                                        <a onclick="addItemToCart('Cordon',180,'images/cordon-bleu.jpg')" class="shop-item-button add-button" id="cart-btn">Order</a>
                                     </div>
                                 </div>
                             </div>
@@ -64,7 +64,7 @@
                                 <div class="card-price">
                                     <p class="price"> ₱180.00  </p>
                                     <div class="add-to-cart">
-                                        <a onclick="addItemToCart('Creamy Carbonara', 180)" class="shop-item-button add-button" id="cart-btn">Order</a>
+                                        <a onclick="addItemToCart('Creamy Carbonara', 180,'images/Creamy Carbonara.jpeg')" class="shop-item-button add-button" id="cart-btn">Order</a>
                                     </div>
                                 </div>
                             </div>
@@ -76,7 +76,7 @@
                                 <div class="card-price">
                                     <p class="price"> ₱180.00  </p>
                                     <div class="add-to-cart">
-                                        <a onclick="addItemToCart('Japanese Ramen',180)" class="shop-item-button add-button" id="cart-btn">Order</a>
+                                        <a onclick="addItemToCart('Japanese Ramen',180,'images/Ramen.jpg')" class="shop-item-button add-button" id="cart-btn">Order</a>
                                     </div>
                                 </div>
                             </div>
@@ -91,7 +91,7 @@
                 <div class="max-width">
                     <!-- MAIN SHOP -->
                     <div class="main-shop">
-                        <h1>Main Shop Near You</h1>
+                        <h1>Foods Near You</h1>
                             <div class="food-deck">
                                 <div class="food-card">
                                     <img src="images/CheesyPizza.jpg">
@@ -101,7 +101,7 @@
                                     <div class="card-price">
                                         <p class="price"> ₱180.00  </p>
                                         <div class="add-to-cart">
-                                            <a onclick="addItemToCart('Cheesy Bites Pizza',180)" class="shop-item-button add-button" id="cart-btn">Order</a>
+                                            <a onclick="addItemToCart('Cheesy Bites Pizza',180,'images/CheesyPizza.jpg')" class="shop-item-button add-button" id="cart-btn">Order</a>
                                         </div>
                                     </div>
                                 </div>
@@ -113,7 +113,7 @@
                                     <div class="card-price">
                                         <p class="price"> ₱180.00  </p>
                                         <div class="add-to-cart">
-                                            <a onclick="addItemToCart('Hot Buffalo Wings',180)" class="shop-item-button add-button" id="cart-btn">Order</a>
+                                            <a onclick="addItemToCart('Hot Buffalo Wings',180,'images/HotBuffaloWings.jpg')" class="shop-item-button add-button" id="cart-btn">Order</a>
                                         </div>
                                     </div>
                                 </div>
@@ -125,7 +125,7 @@
                                     <div class="card-price">
                                         <p class="price"> ₱180.00  </p>
                                         <div class="add-to-cart">
-                                            <a onclick="addItemToCart('Buttered Lobster',180)" class="shop-item-button add-button" id="cart-btn">Order</a>
+                                            <a onclick="addItemToCart('Buttered Lobster',180,'images/ButteredLobster.jpg')" class="shop-item-button add-button" id="cart-btn">Order</a>
                                         </div>
                                     </div>
                                 </div>
@@ -137,7 +137,7 @@
                                     <div class="card-price">
                                         <p class="price"> ₱180.00  </p>
                                         <div class="add-to-cart">
-                                            <a onclick="addItemToCart('Milktea',180)" class="shop-item-button add-button" id="cart-btn">Order</a>
+                                            <a onclick="addItemToCart('Milktea',180,'images/Milktea.jpg')" class="shop-item-button add-button" id="cart-btn">Order</a>
                                         </div>
                                     </div>
                                 </div>
@@ -149,7 +149,7 @@
                                     <div class="card-price">
                                         <p class="price"> ₱180.00  </p>
                                         <div class="add-to-cart">
-                                            <a onclick="addItemToCart('Frappucino',180)" class="shop-item-button add-button" id="cart-btn">Order</a>
+                                            <a onclick="addItemToCart('Frappucino',180,'images/Frappucino.jpg')" class="shop-item-button add-button" id="cart-btn">Order</a>
                                         </div>
                                     </div>
                                 </div>
@@ -161,7 +161,7 @@
                                     <div class="card-price">
                                         <p class="price"> ₱180.00  </p>
                                         <div class="add-to-cart">
-                                            <a onclick="addItemToCart('Grilled Pork Belly',180)" class="shop-item-button add-button" id="cart-btn">Order</a>
+                                            <a onclick="addItemToCart('Grilled Pork Belly',180,'images/GrilledPorkBelly.jpg')" class="shop-item-button add-button" id="cart-btn">Order</a>
                                         </div>
                                     </div>
                                 </div>
@@ -173,7 +173,7 @@
                                     <div class="card-price">
                                         <p class="price"> ₱180.00  </p>
                                         <div class="add-to-cart">
-                                            <a onclick="addItemToCart('Pancit Canton',180)" class="shop-item-button add-button" id="cart-btn">Order</a>
+                                            <a onclick="addItemToCart('Pancit Canton',180,'images/PancitCanton.jpg')" class="shop-item-button add-button" id="cart-btn">Order</a>
                                         </div>
                                     </div>
                                 </div>
@@ -185,7 +185,7 @@
                                     <div class="card-price">
                                         <p class="price"> ₱180.00  </p>
                                         <div class="add-to-cart">
-                                            <a onclick="addItemToCart('Palabok',180)" class="shop-item-button add-button" id="cart-btn">Order</a>
+                                            <a onclick="addItemToCart('Palabok',180,'images/Palabok.jpg')" class="shop-item-button add-button" id="cart-btn">Order</a>
                                         </div>
                                     </div>
                                 </div>
@@ -197,7 +197,7 @@
                                     <div class="card-price">
                                         <p class="price price"> ₱180.00  </p>
                                         <div class="add-to-cart">
-                                            <a onclick="addItemToCart('Lumpiang Shanghai',180)" class="shop-item-button add-button" id="cart-btn">Order</a>
+                                            <a onclick="addItemToCart('Lumpiang Shanghai',180,'images/LumpiangShanghai.jpg')" class="shop-item-button add-button" id="cart-btn">Order</a>
                                         </div>
                                     </div>
                                 </div>
@@ -206,7 +206,7 @@
                             </div>
                     
                     </div> 
-                    <div class="cartlist">
+                    <div class="cartlist" id="cart-list">
                         <h1>Cartlist</h1>
                         <div class="cart-row">
                             <span class="cart-item cart-header cart-column">ITEM</span>

@@ -65,6 +65,12 @@ html{
     color: rgb(128, 240, 128);
 }
 
+@media only screen and (max-width: 1400px){
+    .navbar{
+        padding: 18px 25px
+    }
+}
+
 
 .scrolling-active{ /* This is for navbar when scroll */
     background-color: rgb(39, 39, 39);
@@ -119,7 +125,7 @@ html{
 .shop{
     display: flex;
     background-color: white;
-    height: 10vh;
+    /* height: 10vh; */
     color: black;
     min-height: 500px;
     font-family: Arial, Helvetica, sans-serif
